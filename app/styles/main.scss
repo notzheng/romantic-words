@@ -80,68 +80,6 @@ a:hover {
     opacity: 1;
 }
 
-
-/*-----------------------------音乐-------------------------------------*/
-
-#music {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    right: 8px;
-    top: 8px;
-    z-index: 99;
-}
-
-.music {
-    width: 100%;
-    height: 100%;
-    background: url("http://statics.xiaoenai.com/v4/job/music.png") no-repeat center center;
-    background-size: 24px 24px;
-    z-index: 10;
-    position: relative
-}
-
-.play {
-    animation: rotate 1.2s linear infinite;
-    -webkit-animation: rotate 1.2s linear infinite
-}
-
-#music>span {
-    color: #fff;
-    position: absolute;
-    left: -60px;
-    top: 0;
-    line-height: 24px;
-    font-size: 14px;
-    opacity: 0;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear
-}
-
-#music>span.zshow {
-    left: -30px;
-    opacity: 1
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0)
-    }
-    100% {
-        transform: rotate(360deg)
-    }
-}
-
-@-webkit-keyframes rotate {
-    0% {
-        -webkit-transform: rotate(0)
-    }
-    100% {
-        -webkit-transform: rotate(360deg)
-    }
-}
-
-
 /*box*/
 
 #box {
@@ -168,37 +106,13 @@ a:hover {
     }
 }
 
-
-/* FF fix */
-
-.fadeInUp {
-    -webkit-animation: fadeInUp 3s .2s ease both;
-    -moz-animation: fadeInUp 3s .2s ease both;
-}
-
-@-webkit-keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(100px)
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0)
-    }
-}
-
-@-moz-keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -moz-transform: translateY(100px)
-    }
-    100% {
-        opacity: 1;
-        -moz-transform: translateY(0)
-    }
-}
-
-
 #canvas{
     margin: 200px auto;
+}
+
+.github{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
 }

@@ -23,7 +23,7 @@
     ctx.clearRect(0, 0, CANVASWIDTH, CANVASHEIGHT)
     ctx.fillStyle = 'rgb(255, 255, 255)'
     ctx.textBaseline = 'middle'
-    ctx.font = textSize + "px 'Avenir', 'Helvetica Neue', 'Arial', 'sans-serif'"
+    ctx.font = textSize + 'px \'Avenir\', \'Helvetica Neue\', \'Arial\', \'sans-serif\''
     ctx.fillText(text, (CANVASWIDTH - ctx.measureText(text).width) * 0.5, CANVASHEIGHT * 0.5)
 
     let imgData = ctx.getImageData(0, 0, CANVASWIDTH, CANVASHEIGHT)
@@ -201,5 +201,5 @@
   setTimeout(() => {
     init()  
   }, 4000);
-  mp3.play()
+  // mp3.play()
 })(window)
