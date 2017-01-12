@@ -5,7 +5,7 @@
   const FRAME_RATE = 60
   const PARTICLE_NUM = 1200
   const RADIUS = Math.PI * 2
-  const CANVASWIDTH = 420
+  const CANVASWIDTH = 500
   const CANVASHEIGHT = 150
   const CANVASID = 'canvas'
 
@@ -17,12 +17,13 @@
     quiver = true,
     text = texts[0],
     textIndex = 0,
-    textSize = 60
+    textSize = 70
 
   function draw () {
     ctx.clearRect(0, 0, CANVASWIDTH, CANVASHEIGHT)
     ctx.fillStyle = 'rgb(255, 255, 255)'
     ctx.textBaseline = 'middle'
+    // ctx.fontWeight = 'bold'
     ctx.font = textSize + 'px \'Avenir\', \'Helvetica Neue\', \'Arial\', \'sans-serif\''
     ctx.fillText(text, (CANVASWIDTH - ctx.measureText(text).width) * 0.5, CANVASHEIGHT * 0.5)
 
@@ -62,8 +63,8 @@
           Y
 
         if (quiver) {
-          X = (pxls[i - 1][0]) - (p.px + Math.random() * 15)
-          Y = (pxls[i - 1][1]) - (p.py + Math.random() * 15)
+          X = (pxls[i - 1][0]) - (p.px + Math.random() * 10)
+          Y = (pxls[i - 1][1]) - (p.py + Math.random() * 10)
         } else {
           X = (pxls[i - 1][0]) - p.px
           Y = (pxls[i - 1][1]) - p.py
@@ -147,7 +148,7 @@
       let spread = canvas.height
       let size = Math.random() * 1.2
       // 速度
-      this.delta = 0.02
+      this.delta = 0.06
       // 现在的位置
       this.x = 0
       this.y = 0
