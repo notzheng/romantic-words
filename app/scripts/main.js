@@ -3,7 +3,7 @@
   window.webkitRequestAnimationFrame || window.msRequestAnimationFrame
 
   const FRAME_RATE = 60
-  const PARTICLE_NUM = 1200
+  const PARTICLE_NUM = 2000
   const RADIUS = Math.PI * 2
   const CANVASWIDTH = 500
   const CANVASHEIGHT = 150
@@ -23,8 +23,8 @@
     ctx.clearRect(0, 0, CANVASWIDTH, CANVASHEIGHT)
     ctx.fillStyle = 'rgb(255, 255, 255)'
     ctx.textBaseline = 'middle'
-    // ctx.fontWeight = 'bold'
-    ctx.font = textSize + 'px \'Avenir\', \'Helvetica Neue\', \'Arial\', \'sans-serif\''
+    ctx.fontWeight = 'bold'
+    ctx.font = textSize + 'px \'SimHei\', \'Avenir\', \'Helvetica Neue\', \'Arial\', \'sans-serif\''
     ctx.fillText(text, (CANVASWIDTH - ctx.measureText(text).width) * 0.5, CANVASHEIGHT * 0.5)
 
     let imgData = ctx.getImageData(0, 0, CANVASWIDTH, CANVASHEIGHT)
@@ -199,8 +199,8 @@
     }
   }
 
-  setTimeout(() => {
+  // setTimeout(() => {
     init()  
-  }, 4000);
+  // }, 4000);
   // mp3.play()
 })(window)
