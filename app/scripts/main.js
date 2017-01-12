@@ -125,6 +125,16 @@
       text = texts[textIndex]
       console.log(textIndex)
     }, false)
+
+    document.addEventListener('touchstart', function (e) {
+      textIndex++
+      if (textIndex >= texts.length) {
+        textIndex--
+        return
+      }
+      text = texts[textIndex]
+      console.log(textIndex)
+    }, false)
   }
 
   function init () {
