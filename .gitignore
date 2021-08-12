@@ -1,5 +1,15 @@
-node_modules
+
+.cache/
+coverage/
 dist
-.tmp
-bower_components
-test/bower_components
+node_modules/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

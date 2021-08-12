@@ -100,19 +100,7 @@ a:hover {
     transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
 }
 
-@-moz-document url-prefix() {
-    .txt {
-        text-shadow: #fff 0 0 20px;
-    }
-}
 
 #canvas{
     margin: 200px auto;
-}
-
-.github{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 20px;
 }
